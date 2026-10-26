@@ -68,8 +68,6 @@ The external baseline mechanisms are implemented together in `src/external_basel
 
 To load a compatible local PLM checkpoint, install the optional packages with `python -m pip install -r requirements-plm.txt`, then set `WEB_PLM_MODEL_PATH` to the checkpoint directory before running the external baseline script. Installing these packages does not supply the checkpoint itself.
 
-The Gridworld directory contains only the Gridworld-related source fragments found in the workspace. The originals reference `for_set2.py`, `for_d_no_s.py`, and `data.py`, which were not present. Those fragments are retained and renamed for traceability, but the Gridworld pipeline is not self-contained or guaranteed to run. No missing implementation has been invented.
-
 ## Data
 
 See `data/README.md` for the included MS MARCO file, provenance, size, and which split the current scripts use. The Web experiments sample eligible query records from this file; `dev.jsonl`, `dl20.jsonl`, and previously generated analysis tables are not required by the included core scripts.
